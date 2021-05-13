@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="370dp"
+    android:background="@drawable/curve_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Select Number Of Item You Want To Add"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <NumberPicker
+        android:id="@+id/numberpicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_remove"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:text="Remove"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:text="Add"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:text="Cancle"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

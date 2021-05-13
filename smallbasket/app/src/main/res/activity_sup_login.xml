@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Supplier.sup_login"
+    android:orientation="vertical"
+
+    android:background="@drawable/login_back">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="192dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Supplier"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#141414"
+        android:fontFamily="sans-serif-black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with your details"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Enter Your master key to login"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/sup_pass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/textfield_background"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/lock"
+        android:paddingLeft="10dp"
+        android:hint="  Enter your key here"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/buttonloginsup"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Login" />
+
+    <ProgressBar
+        android:id="@+id/processbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:indeterminateTint="#F8F4F3"
+
+        />
+
+
+
+</LinearLayout>

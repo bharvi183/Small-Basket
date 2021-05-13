@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottonNev.update_profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/create_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/setuser_photo"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/setyourpic" />
+
+        <EditText
+            android:id="@+id/setuser_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:hint="Enter Your Name"
+            android:paddingLeft="20dp" />
+
+        <EditText
+            android:id="@+id/setuser_address"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="top|left"
+            android:hint="Enter Your Address"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="1"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:scrollbars="vertical" />
+
+        <EditText
+            android:id="@+id/setuser_phone"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Your Phonr No."
+            android:inputType="phone"
+            android:paddingLeft="20dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="20dp">
+            <Button
+                android:id="@+id/cancle_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/button_background"
+                android:text="Cancle"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/done_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_background"
+                android:text="Done"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

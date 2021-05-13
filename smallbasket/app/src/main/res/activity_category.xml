@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllItems.basket"
+    android:background="@color/colorPrimary">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="590dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fruits_vegetable"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:drawableRight="@drawable/arrow_drop_down"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:text="      Fruits &amp; Vegetables"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/fruits"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sub_category_background"
+                android:paddingTop="6dp"
+                android:text="Fruits"
+                android:textAlignment="center"
+                android:textColor="#6C963A"
+                android:textSize="24dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/vegetable"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sub_category_background"
+                android:paddingTop="6dp"
+                android:text="Vegetable"
+                android:textColor="#6C963A"
+                android:textSize="24dp"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/Beverages"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:paddingTop="12dp"
+                android:text="      Beverages"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/chocolate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:paddingTop="12dp"
+                android:text="      Chocolates"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/foodgrains"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:drawableRight="@drawable/arrow_drop_down"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:text="      Foodgrains"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/packed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sub_category_background"
+                android:paddingTop="6dp"
+                android:text="Packed"
+                android:textAlignment="center"
+                android:textColor="#6C963A"
+                android:textSize="24dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unpacked"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sub_category_background"
+                android:paddingTop="6dp"
+                android:textAlignment="center"
+                android:text="Unpacked"
+                android:textColor="#6C963A"
+                android:textSize="24dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/oilandmasala"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:drawableRight="@drawable/arrow_drop_down"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:text="      Oil and Masala"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/oil"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sub_category_background"
+                android:paddingTop="6dp"
+                android:text="Oils"
+                android:textAlignment="center"
+                android:textColor="#6C963A"
+                android:textSize="24dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/masala"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sub_category_background"
+                android:paddingTop="6dp"
+                android:text="Masala"
+                android:textAlignment="center"
+                android:textColor="#6C963A"
+                android:textSize="24dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cleanning"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:drawableRight="@drawable/arrow_drop_down"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:text="      Cleaning Products"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/housecleanninng"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sub_category_background"
+                android:paddingTop="6dp"
+                android:text="House Cleaning"
+                android:textAlignment="center"
+                android:textColor="#6C963A"
+                android:textSize="24dp"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/dairyproduct"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:paddingTop="12dp"
+                android:text="      Dairy Products"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+            <TextView
+                android:id="@+id/snacks"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:drawableRight="@drawable/arrow_drop_down"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:text="      Snacks"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/packetsnacks"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sub_category_background"
+                android:paddingTop="6dp"
+                android:text="Packet Snacks"
+                android:textAlignment="center"
+                android:textColor="#6C963A"
+                android:textSize="24dp"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/bakerysnacks"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sub_category_background"
+                android:paddingTop="6dp"
+                android:text="Bakery Snacks"
+                android:textAlignment="center"
+                android:textColor="#6C963A"
+                android:textSize="24dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/beautyproduct"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:paddingTop="12dp"
+                android:text="      Beauty Products"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+            <TextView
+                android:id="@+id/babycare"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:paddingTop="12dp"
+                android:text="      Baby Care"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+            <TextView
+                android:id="@+id/bodycare"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/category_background"
+                android:paddingTop="12dp"
+                android:text="      Body Care Products"
+                android:textColor="#0A0A0A"
+                android:textSize="24dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/nav_menu"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

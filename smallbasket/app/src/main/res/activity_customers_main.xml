@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottonNev.customers_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#EEE8E8"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="672dp"
+        android:layout_above="@id/bottom_navigation"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E3F3CF"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/slid1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/slid2" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/slid3" />
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                android:autoStart="true"
+                android:flipInterval="3000">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#C8EE9C"
+                    android:textColor="#C8EE9C"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#A6D66F"
+                    android:textColor="#A6D66F"/>
+
+            </ViewFlipper>
+
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lable_background"
+                android:fontFamily="sans-serif-black"
+                android:layout_gravity="center_horizontal"
+                android:text="Shop By Category"
+                android:paddingTop="5dp"
+                android:textAlignment="center"
+                android:textColor="#0F0F0F"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp">
+
+                <ImageView
+                    android:id="@+id/fv"
+                    android:layout_width="183dp"
+                    android:layout_height="165dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/fv" />
+
+                <TextView
+                    android:layout_width="183dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="170dp"
+                    android:background="#ffffff"
+                    android:text="Fruits &amp; Vegetables"
+                    android:textAlignment="center"
+                    android:textColor="#090808" />
+
+                <ImageView
+                    android:id="@+id/coldrinks"
+                    android:layout_width="183dp"
+                    android:layout_height="165dp"
+                    android:layout_marginLeft="200dp"
+                    android:background="@drawable/product_image_background"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/cold_drink" />
+
+                <TextView
+                    android:layout_width="183dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="170dp"
+                    android:background="#ffffff"
+                    android:text="Beverages"
+                    android:textAlignment="center"
+                    android:textColor="#090808" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="442dp"
+                android:layout_marginTop="3dp">
+
+
+                <ImageView
+                    android:id="@+id/chocolate"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="3dp"
+                    android:padding="6dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/chocolets" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="125dp"
+                    android:background="@drawable/category_name_background"
+                    android:text="Chocolates"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+                <ImageView
+                    android:id="@+id/foodgrain"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="133dp"
+                    android:padding="6dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/foodgrains" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="125dp"
+                    android:background="@drawable/category_name_background"
+                    android:text="Foodgrains"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+
+                <ImageView
+                    android:id="@+id/oils_masala"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="263dp"
+                    android:padding="6dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/oils_masala" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="263dp"
+                    android:layout_marginTop="125dp"
+                    android:background="@drawable/category_name_background"
+                    android:text="Oil and Masala"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+                <ImageView
+                    android:id="@+id/cleanning"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="148dp"
+                    android:padding="6dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/cleaning_household" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="273dp"
+                    android:background="@drawable/category_name_background"
+                    android:text="Cleaning Products"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+                <ImageView
+                    android:id="@+id/dairy_product"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="148dp"
+                    android:padding="6dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/dairy_product" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="273dp"
+                    android:background="@drawable/category_name_background"
+                    android:text="Dairy Products"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+
+                <ImageView
+                    android:id="@+id/snacks"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="263dp"
+                    android:layout_marginTop="148dp"
+                    android:padding="6dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/snacks" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="263dp"
+                    android:layout_marginTop="273dp"
+                    android:background="@drawable/category_name_background"
+                    android:text="Snacks"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+                <ImageView
+                    android:id="@+id/beauty"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="297dp"
+                    android:padding="10dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/beauty" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="422dp"
+                    android:background="@drawable/category_name_background"
+                    android:text="Beauty Products"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+                <ImageView
+                    android:id="@+id/babycare"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="297dp"
+                    android:padding="10dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/babycare" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="422dp"
+                    android:background="@drawable/category_name_background"
+                    android:text="Baby Care"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+                <ImageView
+                    android:id="@+id/bodycare"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="263dp"
+                    android:layout_marginTop="297dp"
+                    android:padding="10dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/bodycare" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="263dp"
+                    android:layout_marginTop="422dp"
+                    android:background="@drawable/category_name_background"
+                    android:text="Bodycare Products"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+            </RelativeLayout>
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                android:autoStart="true"
+                android:flipInterval="3000">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#C8EE9C"
+                    android:textColor="#C8EE9C"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#A6D66F"
+                    android:textColor="#A6D66F"/>
+
+            </ViewFlipper>
+
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#E3F3CF"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/slid2" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/slid3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/slid1" />
+            </ViewFlipper>
+
+
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/lable_background"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Daily Essentials Store"
+                android:textAlignment="center"
+                android:textColor="#0F0F0F"
+                android:textSize="25dp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/dailyfv"
+                    android:layout_width="183dp"
+                    android:layout_height="165dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:padding="20dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/fv" />
+
+                <TextView
+                    android:layout_width="183dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="172dp"
+                    android:background="#ffffff"
+                    android:text="Fruits &amp; Vegetables"
+                    android:textAlignment="center"
+                    android:textColor="#090808" />
+
+                <ImageView
+                    android:id="@+id/dailyfoodgrain"
+                    android:layout_width="183dp"
+                    android:layout_height="165dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="7dp"
+                    android:padding="20dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/foodgrains" />
+
+                <TextView
+                    android:layout_width="183dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="172dp"
+                    android:background="#ffffff"
+                    android:text="Daily Food"
+                    android:textAlignment="center"
+                    android:textColor="#090808" />
+                <ImageView
+                    android:id="@+id/dailydairyproduct"
+                    android:layout_width="183dp"
+                    android:layout_height="165dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="200dp"
+                    android:padding="6dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/dairy_product" />
+
+                <TextView
+                    android:layout_width="183dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="365dp"
+                    android:background="#ffffff"
+                    android:text="Dairy Products"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="7dp"
+                    android:textColor="#090808" />
+
+                <ImageView
+                    android:id="@+id/dailyhousecleaning"
+                    android:layout_width="183dp"
+                    android:layout_height="165dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="200dp"
+                    android:padding="6dp"
+                    android:background="@drawable/product_image_background"
+                    app:srcCompat="@drawable/cleaning_household" />
+
+                <TextView
+                    android:layout_width="183dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="365dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="#ffffff"
+                    android:text="House Cleaning"
+                    android:textAlignment="center"
+                    android:textColor="#090808" />
+
+
+            </RelativeLayout>
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                android:autoStart="true"
+                android:flipInterval="3000">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#C8EE9C"
+                    android:textColor="#C8EE9C"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#A6D66F"
+                    android:textColor="#A6D66F"/>
+
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E3F3CF"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/slid3" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/slid2" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/slid1" />
+            </ViewFlipper>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/nav_menu"
+        android:layout_alignParentBottom="true"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        />
+
+</RelativeLayout>
+
+
+
+
+
+
+

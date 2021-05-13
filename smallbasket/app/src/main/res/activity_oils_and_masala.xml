@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Categories.oils_and_masala">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oil &amp; Masalas"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablayout"
+        app:tabIndicatorColor="#2a2a2a"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pager"/>
+
+</LinearLayout>
